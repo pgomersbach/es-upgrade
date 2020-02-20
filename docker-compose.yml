@@ -6,7 +6,7 @@ services:
     volumes:
       - ~/es-upgrade/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - ~/es-upgrade/data:/usr/share/elasticsearch/data:z
-      - ~/es-upgrade/snapshot:/mnt/snapshot
+      - ~/es-upgrade/backup/snapshot:/mnt/snapshot
     ulimits:
       memlock:
         soft: -1
